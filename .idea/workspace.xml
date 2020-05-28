@@ -16,13 +16,16 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b77c9d75-3cfe-4b1f-a2ad-c952e16a8573" name="Default Changelist" comment="Corrected the set origin to center='MEDIAN' and">
+    <list default="true" id="b77c9d75-3cfe-4b1f-a2ad-c952e16a8573" name="Default Changelist" comment="Corrected the set origin command to work with version 2.82a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quickorigin.py" beforeDir="false" afterPath="$PROJECT_DIR$/quickorigin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +50,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -177,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556366505644</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Corrected the set origin command to work with version 2.82a">
+      <created>1590605735959</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590605735959</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -195,7 +207,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -219,28 +237,53 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated a few lines of code and added a dedicated tab inside the Sidebar." />
     <MESSAGE value="Renamed the add-on file to quickorigin.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed the add-on file to quickorigin.py" />
+    <MESSAGE value="Corrected the set origin command to work with version 2.82a" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected the set origin command to work with version 2.82a" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="991" y="111" key="CommitChangelistDialog2" timestamp="1590604887712">
+    <state x="845" y="383" key="#Notifications" timestamp="1590606220015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="991" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590604887712" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1590604157091">
+    <state x="845" y="383" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1590606220015" />
+    <state x="991" y="111" key="CommitChangelistDialog2" timestamp="1590606751261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590604157091" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1590604157091">
+    <state x="991" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590606751261" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1590606512882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590604157091" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1590604157091">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590606512882" />
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1590607655952">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590604157091" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1590604157091">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590607655952" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1590607655951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590604157091" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590607655951" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1590607655951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590607655951" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1590607655952">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590607655952" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1590656128632">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1366.768@0.0.1920.1040" timestamp="1590656128632" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590607648452">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590607648452" />
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590606314220">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590606314220" />
+    <state x="734" y="308" key="git4idea.merge.GitMergeDialog" timestamp="1590606441097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="308" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590606441097" />
   </component>
 </project>
